@@ -1,0 +1,25 @@
+Sistema de banco
+
+Funcionalidades: Saque, Depósito e Transferência
+Dados do cliente: Nome, código, senha e saldo 
+
+Requisitos: 
+-> Perguntar o código do cliente e senha
+    -> Código + senha estão corretos? 
+        -> Sim, continua com o código. 
+        -> Não, informa que o cliente não foi localizado e para o código. 
+
+-> Perguntar qual operação ele deseja fazer (1-Saque, 2-Depósito, 3-Transferência)
+-> Perguntar qual o valor da operação (Deverá ser um número positivo).
+    -> Se saque: 
+        -> O cliente possui saldo suficiente? 
+            - Sim: Libera o dinheiro e atualiza o saldo. 
+            - Não: Informa que não tem saldo suficiente.  
+    -> Se depósito: 
+            - Pergunta qual a conta destino e confirma operação. Se a conta for conhecida no banco de dados, deverá atualizar o saldo.
+    -> Se transferência: 
+            - Pergunta qual a conta destino e confirma operação. Se a conta for conhecida no banco de dados, deverá atualizar o saldo.
+
+-> Após finalizar as operações, perguntar se ele gostaria de fazer outra operação. 
+
+
